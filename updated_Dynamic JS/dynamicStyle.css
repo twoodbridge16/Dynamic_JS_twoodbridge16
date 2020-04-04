@@ -1,0 +1,55 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("https://bit.ly/2w8oz7Y"), 
+    url("https://bit.ly/3aIyQqu");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    position: center;
+    padding-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 8px blue;
+}
+
+#table {
+    width: 20%;
+    margin-top: 25px;
+    margin-right: 40%;
+    margin-left: 40%;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+table tr td {
+    border: 2px dashed blue;
+    border-radius: 25px;
+}
+
+.gameText {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.game {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.guessArea {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
