@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" 
+    rel="stylesheet">
+
+    <title>Retro Gaming</title>
+  </head>
+  <body>
+    <script src="finaljs.js"></script>
+    <div class="banner">
+        <h1><a href="index.html">Retro Game Collecting</a></h1>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+
+    <div class="box1">
+      <div class="title">
+        <h3>Welcome!</h3>
+      </div>
+      <div class="welcomeInfo">
+        <p>Welcome to the wonderful world of Retro Video Game collecting!</p>
+        <img src="https://bit.ly/3cwCZyk" alt="Game Collection1" width=380px height=255px>
+      </div>  
+    </div>
+    <div class="box2">
+      <div class="title">
+        <h3>What is this about?</h3>
+      </div>
+      <div class="welcomeInfo">
+        <p>Here you will find rescources to get into the retro gaming community
+          as well as how to begin your own collecting journey.</p>
+        <p>There is so much nostalgia and enjoyment brought about by collecting and 
+          playing retro as well as newer video games. I hope you can start collecting 
+          and playing all of your favorite games soon!
+        </p>
+      </div>
+    </div>
+    <div class="quiz">
+      <iframe name='proprofs' id='proprofs' width='100%' height='100%' frameborder=0 marginwidth=0 marginheight=0 src='https://www.proprofs.com/quiz-school/story.php?title=what-kind-of-game-collector-are-you&id=2721608&ew=430'>
+      </iframe>
+      <div style='font-size:10px; font-family:Arial, Helvetica, sans-serif; text-align:left;'><a href='https://www.proprofs.com/quiz-school/story.php?title=what-kind-of-game-collector-are-you' target='_blank' title='ProProfs - What Kind of Game Collector are You?'>ProProfs - What Kind of Game Collector are You?</a> » <a href='https://www.proprofs.com/quiz-school/' title='ProProfs Quiz Software' target='_blank' rel='nofollow'>ProProfs Quiz Software</a></div>      
+    </div>
+    <div class="gameTable">
+      <b>Create a list of your current collection!</b>
+      <div class="inputSection">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" id="gameName"></td>
+          </tr>
+          <tr>
+            <td>Console:</td>
+            <td><input type="text" id="console">
+            <input type="button" id="add" value="Add Game" onclick="Javascript:addRow()"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dataSection">
+        <b>Your game collection:</b>
+        <table id="gameCollection" border="1" cellpadding="2">
+          <tr>
+            <td>&nbsp;</td>
+            <td><b>Name</b></td>
+            <td><b>Console</b></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="title">
+        <h3>Collecting Resources</h3>
+      </div>
+      <div class="purchase">
+        <p>Where to make your first purchases:</p>
+        <ul>
+          <li><a href="https://www.ebay.com/"><img src="https://bit.ly/353XxM1" class="ebay" width="250px" height="120px"></a></li>
+          <p>Ebay</p>
+          <li><a href="https://dkoldies.com/"><img src="https://bit.ly/352xAfW" class="dk" width="250px" height="120px"></a></li>
+          <p>DK Oldies</p>
+          <li><a href="https://levelupvideogames.com/"><img src="https://bit.ly/2S3Gc0o" class="lvlUp" width="250px" height="120px"></a></li>
+          <p>Level Up Video<br>Games</p>
+        </ul>
+        <p>Events and Conventions (Highly Recommend):</p>
+        <ul>
+          <li><a href="http://retrogamingexpo.com/"><img src="https://bit.ly/2KCWnxz" class="prge" width="250px" height="140px"></a></li>
+          <p>Portland Retro<br>Gaming Expo</p>
+          <li><a href="http://seattleretro.org/"><img src="https://bit.ly/3bAyKSg" class="srge" width="250px" height="120px"></a></li>
+          <p>Seattle Retro<br>Gaming Expo</p>
+          <li><a href="http://vancouvergamingexpo.com/"><img src="https://bit.ly/2XYQ3bQ" class="vrge" width="250px" height="160px"></a></li>
+          <p>Vancouver (Canada)<br>Retro Gaming Expo</p>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
